@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hola ñañita :3</p>
+    <br>
+    <button onclick="hablar(texto)">Pulsa aquí</button>
+
+    <script>
+        let texto = "Pareces a Jorge el curioso, deja de ser curiosa.";
+        const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+        </script>
+</body>
+</html>
